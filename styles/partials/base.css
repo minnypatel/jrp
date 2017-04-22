@@ -1,0 +1,42 @@
+.container {
+  background: #f2f3f4;
+}
+
+h1, h2, h3, p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+#header .me {
+  color: #ffa400;
+  font-family: 'Dosis', sans-serif;
+  font-weight: normal;
+  font-size: 3.5em;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	-moz-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.nav-text {
+  text-align: center;
+}
+
+.nav-text a {
+  font-family: 'Dosis', sans-serif;
+  color: #554935;
+  font-weight:100;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.nav-text a:hover {
+  color: #000;
+  font-weight:200;
+}
