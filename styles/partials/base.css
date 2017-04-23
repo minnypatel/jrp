@@ -16,9 +16,11 @@ h2, h3, p, a {
   background-size: ;
   background-repeat: no-repeat;
   background-color: #000;
-  max-width: 100%;
+  width: 100%;
   height: 400px;
-  position: relative;
+  top: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 #header {
@@ -52,14 +54,21 @@ h2, h3, p, a {
 .nav-text a {
   font-family: 'Dosis', sans-serif;
   color: #554935;
-  font-weight:100;
+  font-weight: 100;
   font-size: 1.5em;
   text-transform: uppercase;
 }
 
 .nav-text a:hover {
   color: #000;
-  font-weight:200;
+  font-weight: 200;
+}
+
+.container {
+  /*overflow: hidden;*/
+  /*position: absolute;*/
+  margin-top: 400px;
+  z-index: 1;
 }
 
 #content {
