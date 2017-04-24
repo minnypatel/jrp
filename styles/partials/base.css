@@ -10,21 +10,22 @@ h2, h3, p, a {
   color: #554935;
 }
 
-.header-nav-img {
+#header-nav-wrapper {
   background-image: url("../../images/lombok.jpg");
-  background-position: center top;
-  background-size: ;
+  background-position: center 40%;
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: #f2f3f4; /* doesn't work */
   width: 100%;
   height: 400px;
+  transition: 0.5s ease;
   top: 0;
   position: fixed;
   z-index: 2;
 }
 
-#header {
-
+#header-nav-wrapper.smaller {
+  height: 220px;
+  transition: 0.5s ease;
 }
 
 #header .me {
@@ -71,17 +72,39 @@ h2, h3, p, a {
   z-index: 1;
 }
 
+h2:before {
+  display: block;
+  content: " ";
+  margin-top: -285px;
+  height: 285px;
+  visibility: hidden;
+}
+
+
 #content {
   text-align: center;
   position: relative;
 }
 
 #about {
-  height: 300px
+  height: 700px
+  /*display: block;
+  content: " ";
+  margin-top: -220px;
+  height: 220px;
+  visibility: hidden;*/
 }
 
 #work {
-  height: 300px
+  height: 700px
+}
+
+#about:before, #work:before, #contact:before {
+  display: block;
+  content: " ";
+  margin-top: -220px;
+  height: 220px;
+  visibility: hidden;
 }
 
 #contact {
