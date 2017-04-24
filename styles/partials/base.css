@@ -6,8 +6,25 @@
 }
 
 h2, h3, p, a {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: #554935;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 100;
+  text-transform: uppercase;
+  /*color: #737169;*/
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+}
+
+strong {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
 }
 
 #header-nav-wrapper {
@@ -66,37 +83,13 @@ h2, h3, p, a {
 }
 
 .container {
-  /*overflow: hidden;*/
-  /*position: absolute;*/
   margin-top: 400px;
   z-index: 1;
 }
 
-h2:before {
-  display: block;
-  content: " ";
-  margin-top: -285px;
-  height: 285px;
-  visibility: hidden;
-}
-
-
 #content {
   text-align: center;
   position: relative;
-}
-
-#about {
-  height: 700px
-  /*display: block;
-  content: " ";
-  margin-top: -220px;
-  height: 220px;
-  visibility: hidden;*/
-}
-
-#work {
-  height: 700px
 }
 
 #about:before, #work:before, #contact:before {
@@ -107,22 +100,79 @@ h2:before {
   visibility: hidden;
 }
 
+#about h3 {
+  padding: 1.2em 0;
+}
+
+.about-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  line-height: 1.4em;
+  padding-bottom: 0.8em;
+}
+
+.button-cv {
+  padding: 0.8em 3em;
+  margin: 10px;
+  border: none;
+  background-color: #554935;
+  color: white;
+  font-size: 0.8em;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.5s;
+  display: inline-block;
+}
+
+.button-cv:hover {
+  opacity:0.7;
+}
+
+#work {
+  height: 600px;
+}
+
+#work h3 {
+  padding: 1.2em 0;
+}
+
+.work-boxes li {
+  width: 200px;
+  height: 200px;
+  background-color: #b9b8b4;
+  display: inline-block;
+  opacity: 0.8;
+  text-align: center;
+  position: relative;
+  margin: 10px;
+}
+
+.work-boxes li a {
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  top: 40%;
+  transform: translateX(-50px);
+  text-align: center;
+}
+
 #contact {
   background-image: url("../../images/leeds.jpg");
   background-position: center;
   max-width: 100%;
   height: 340px;
-  /*height: 100%;*/
   padding: 3% 20%;
   position: relative;
   text-align: center;
-  /*overflow: hidden;*/
 }
 
 .contact-form-outer {
   width: 400px;
-  height: 280px;
-  padding-top: 30px;
+  height: 320px;
+  padding-top: 20px;
   margin: 0px auto;
   background-color: rgba(255,255,255,0.7);
   position: absolute;
@@ -142,13 +192,13 @@ h2:before {
   margin-bottom: 8px;
 }
 
-#message{
+#message {
   resize:none;
   height:100px;
   overflow-y:hidden;
 }
 
-#submit{
+#submit {
   padding: 8px;
   margin-right: 30px;
   width: 80px;
@@ -165,10 +215,6 @@ h2:before {
 #submit:hover{
   opacity:0.7;
 }
-
-/*.contact-form h3 {
-  border-bottom: 1px solid #554935;
-}*/
 
 .footer-nav-img {
   margin-top: 10px;
