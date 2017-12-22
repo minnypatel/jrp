@@ -3,6 +3,8 @@
 .container {
   background: #f2f3f4;
   max-width: 1720px;
+  margin-top: 400px;
+  z-index: 1;
 }
 
 h2, h3, p, a {
@@ -27,66 +29,6 @@ strong {
   font-weight: 700;
 }
 
-#header-nav-wrapper {
-  background-image: url("../../images/lombok.jpg");
-  background-position: center 40%;
-  background-repeat: no-repeat;
-  background-color: #f2f3f4; /* doesn't work */
-  width: 100%;
-  height: 400px;
-  transition: 0.5s ease;
-  top: 0;
-  position: fixed;
-  z-index: 2;
-}
-
-#header-nav-wrapper.smaller {
-  height: 220px;
-  transition: 0.5s ease;
-}
-
-#header .me {
-  color: #fff;
-  font-family: 'Dosis', sans-serif;
-  font-weight: normal;
-  font-size: 5em;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-#nav {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(255,255,255,0.7);
-  text-align: center;
-  /*height: 15%;*/
-}
-
-#nav li {
-  display: inline-block;
-  text-align: center;
-  padding: 10px;
-}
-
-.nav-text a {
-  font-family: 'Dosis', sans-serif;
-  color: #554935;
-  font-weight: 100;
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-
-.nav-text a:hover {
-  color: #000;
-  font-weight: 200;
-}
-
-.container {
-  margin-top: 400px;
-  z-index: 1;
-}
-
 #content {
   text-align: center;
   position: relative;
@@ -107,6 +49,7 @@ strong {
 .about-text {
   max-width: 600px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .about-text p {
@@ -159,86 +102,10 @@ strong {
   text-align: center;
 }
 
-#contact {
-  background-image: url("../../images/leeds.jpg");
-  background-position: center;
-  max-width: 100%;
-  height: 420px;
-  padding: 3% 20%;
-  position: relative;
-  text-align: center;
-}
-
-.social-media {
-  width: 400px;
-  height: 40px;
-  padding-top: 10px;
-  background-color: rgba(255,255,255,0.7);
-  position: relative;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.social-media a {
-  position: absolute;
-  font-weight: 700;
-  font-size: 1.8em;
-  color: #000;
-}
-
-.contact-form-outer {
-  width: 400px;
-  height: 320px;
-  padding-top: 20px;
-  margin: 0px auto;
-  background-color: rgba(255,255,255,0.7);
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.field {
-  width: 300px;
-  padding: 5px;
-  border: none;
-  outline: none;
-  background: none;
-  color: #554935;
-  border-bottom: 2px solid #554935;
-  margin-bottom: 8px;
-}
-
-#message {
-  resize:none;
-  height:100px;
-  overflow-y:hidden;
-}
-
-#submit {
-  padding: 8px;
-  margin-right: 30px;
-  width: 80px;
-  float: right;
-  border: none;
-  background-color: #554935;
-  color: white;
-  font-size: .8em;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-
-#submit:hover{
-  opacity:0.7;
-}
-
 .footer-nav-img {
   margin-top: 10px;
   background-image: url("../../images/footer.jpg");
   background-position: center bottom;
-  background-size: ;
   background-repeat: no-repeat;
   background-color: #000;
   max-width: 100%;
@@ -258,7 +125,6 @@ strong {
   font-weight:100;
   font-size: 1em;
 }
-
 
 @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 
