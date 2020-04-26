@@ -19,7 +19,6 @@ h3 {
   font-size: 2em;
   font-weight: 100;
   text-transform: uppercase;
-  /*color: #737169;*/
 }
 
 p {
@@ -38,7 +37,6 @@ strong {
 }
 
 #about:before,
-#work:before,
 #contact:before {
   display: block;
   content: ' ';
@@ -55,39 +53,12 @@ strong {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
+  padding-bottom: 1.6em;
 }
 
 .about-text p {
   line-height: 1.4em;
   padding-bottom: 0.8em;
-}
-
-#work {
-  height: 600px;
-}
-
-#work h3 {
-  padding: 1.2em 0;
-}
-
-.work-boxes li {
-  width: 200px;
-  height: 200px;
-  background-color: #b9b8b4;
-  display: inline-block;
-  opacity: 0.8;
-  text-align: center;
-  position: relative;
-  margin: 10px;
-}
-
-.work-boxes li a {
-  color: #fff;
-  position: absolute;
-  margin: 0 auto;
-  top: 40%;
-  transform: translateX(-50px);
-  text-align: center;
 }
 
 .footer-nav-img {
