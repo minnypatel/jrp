@@ -33,7 +33,6 @@ strong {
 
 #content {
   text-align: center;
-  position: relative;
 }
 
 #about:before,
@@ -59,6 +58,12 @@ strong {
 .about-text p {
   line-height: 1.4em;
   padding-bottom: 0.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-text {
+    padding: 0 15px;
+  }
 }
 
 .footer-nav-img {
