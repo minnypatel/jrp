@@ -78,16 +78,18 @@ strong {
 }
 
 .copyright {
-  position: absolute;
-  bottom: 0;
-  padding: 42px 0;
+  padding: 27px 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright p {
   text-align: center;
   font-family: 'Dosis', sans-serif;
   color: #554935;
   font-weight: 100;
   font-size: 1em;
+  line-height: 1.5em;
 }
 
 @-webkit-keyframes text-focus-in {
